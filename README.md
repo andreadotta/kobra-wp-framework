@@ -6,7 +6,6 @@
 Kobra framework is a simple model 2 like framework, for developing plugins and themes for Wordpress 5+.
 
 ## Table of contents ##
-
 - [Kobra Framework for Wordpress](#kobra-framework-for-wordpress)
   * [Table of contents](#table-of-contents)
   * [Requiremets](#requiremets)
@@ -20,24 +19,40 @@ Kobra framework is a simple model 2 like framework, for developing plugins and t
     + [The Dao objects](#the-dao-objects)
     + [The Entity objects](#the-entity-objects)
     + [The Dto objects](#the-dto-objects)
+    + [Custom Meta Boxes](#custom-meta-boxes)
+      - [Simple metabox](#simple-metabox)
+        * [The controller](#the-controller)
+      - [Advanced metabox](#advanced-metabox)
+        * [The controller](#the-controller-1)
   * [Using in Theme](#using-in-theme)
     + [basic structure](#basic-structure)
     + [Init](#init-1)
     + [theme.yml](#themeyml)
-  * [Using Helpers](#using-helpers)
+    + [Theme helpers](#theme-helpers)
+      - [Custom Action Hooks](#custom-action-hooks)
+      - [Theme customizers](#theme-customizers)
+  * [Logging](#logging)
+  * [Create custom Helpers](#create-custom-helpers)
+  * [Create Wordpress page](#create-wordpress-page)
+  * [Create Web Components (Reactjs)](#create-web-components--reactjs-)
   * [Create Gutenberg block](#create-gutenberg-block)
     + [Create block controllers](#create-block-controllers)
     + [Service and Helper](#service-and-helper)
+    + [Blocks in the kobrafw.xml](#blocks-in-the-kobrafwxml)
+    + [Create a Reactjs Block](#create-a-reactjs-block)
+      - [Install npm modules](#install-npm-modules)
+      - [Create  your custom block](#create--your-custom-block)
+    + [Server side rendering (dynamic blocks)](#server-side-rendering--dynamic-blocks-)
+      - [The src/index.js](#the-src-indexjs)
+      - [The callback](#the-callback)
+  * [(API) Credentials](#-api--credentials)
   * [Use of Rest\Ajax](#use-of-rest-ajax)
     + [Backend:  your rest service](#backend---your-rest-service)
       - [The REST route](#the-rest-route)
-      - [The controller](#the-controller)
-      - [The service (ajax)](#the-service--ajax-)
+      - [The controller](#the-controller-2)
       - [KobrafwWrapAjax status](#kobrafwwrapajax-status)
+      - [The service object (ajax)](#the-service-object--ajax-)
     + [Frontend](#frontend)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 ## Requiremets ##
 
