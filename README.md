@@ -429,6 +429,41 @@ To declare helper add the followiing lines to kobrafw.xml
 ```
 
 ## Create Wordpress page ##
+With kobraFW you can create dynamic page using kobrafwobj type="page,global" 
+The required attributes are:
+- name. the name of the block 
+- pagename: equivalent to page slug
+
+The required elements are:
+- ctrl: the controller
+- service: the service
+- title: the title of the page
+
+Example in _kobrafw.xml_
+```xml
+	<kobrafwobj type="page,global" name="test-page" pagename="test-page">
+
+		<title>My title</title>		
+
+		<ctrl>
+			<classname>Yourpackage\ctrl\ExampleTestCtrl</classname>
+		</ctrl>
+		<service>
+			<classname>Yourpackage\services\ExampleTestService</classname>
+		</service>
+		
+	</kobrafwobj>
+``` 
+
+### The controller###
+The controller must contain the method __pageLoad__
+```php
+	public function pageLoad($wp_query, $post) {
+		return "hello world";
+	}
+```
+
+
 
 
 ## Create Web Components (Reactjs) ##
